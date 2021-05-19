@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'girish-webapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_658b9184998e4c41ac8689c9a2f9f026 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8c6e4835873a40a49402a35824484d4b }}
         package: .
