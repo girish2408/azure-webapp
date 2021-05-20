@@ -1,7 +1,11 @@
-var express = require('express');
-var app = express();
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/hello', function (req, res) {
-  res.send('hello world');
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
 })
