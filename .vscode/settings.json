@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/bf1cd5f6-ab4f-4ab3-b0f9-9e252d2248cb/resourceGroups/azure-udemy-practise/providers/Microsoft.Web/sites/girish-webapp",
+    "appService.deploySubpath": "."
+}
