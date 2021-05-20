@@ -1,11 +1,7 @@
-const http = require('http');
+var express = require('express');
+var app = express();
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, {"Content-Type": "text/plain"});
-  res.end('Hello World 123' );
-});
-console.log(process.env.PORT);
-const port = process.env.PORT || 1337;
-
-server.listen(port);
-console.log('server running at port ' , port);
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', function (req, res) {
+  res.send('hello world');
+})
